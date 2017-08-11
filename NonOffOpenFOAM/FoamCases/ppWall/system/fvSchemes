@@ -36,14 +36,14 @@ laplacianSchemes
 {
 	default 	none;
 	laplacian(nu,U) Gauss linear orthogonal;
-	laplacian((1|A(u)),p) Gauss linear orthogonal;
+	laplacian((1|A(U)),p) Gauss linear orthogonal;
 
 }
 
 interpolationSchemes
 {
-	default 	orthogonal;
-	interpolate(HbyA) linear;
+	default 			linear;
+	interpolate(HbyA) 	linear;
 
 }
 
