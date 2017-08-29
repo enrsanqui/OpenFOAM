@@ -1,0 +1,83 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1706                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1706
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Aug 29 2017
+Time   : 20:19:50
+Host   : "kali"
+PID    : 4309
+Case   : /root/Desktop/OpenFOAM/NonOffOpenFOAM/FoamCases/ppWallGrad
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function blockMesh
+    in file blockMesh.C at line 166
+    Using the old blockMeshDict location: "constant/polyMesh/blockMeshDict"
+    instead of the default location:  "system/blockMeshDict"
+
+Not deleting polyMesh directory 
+    "/root/Desktop/OpenFOAM/NonOffOpenFOAM/FoamCases/ppWallGrad/constant/polyMesh"
+    because it contains blockMeshDict
+Creating block mesh from
+    "/root/Desktop/OpenFOAM/NonOffOpenFOAM/FoamCases/ppWallGrad/constant/polyMesh/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 0.1
+    Block 0 cell size :
+        i : 0.1 .. 0.1
+        j : 0.005 .. 0.005
+        k : 0.01 .. 0.01
+
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (2 0.1 0.01)
+  nPoints: 882
+  nCells: 400
+  nFaces: 1640
+  nInternalFaces: 760
+----------------
+Patches
+----------------
+  patch 0 (start: 760 size: 20) name: top
+  patch 1 (start: 780 size: 20) name: bottom
+  patch 2 (start: 800 size: 20) name: inlet
+  patch 3 (start: 820 size: 20) name: outlet
+  patch 4 (start: 840 size: 800) name: frontAndBack
+
+End
+

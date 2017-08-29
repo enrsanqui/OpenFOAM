@@ -1,0 +1,2 @@
+patchIntegrate has been superceded by the postProcess utility:
+    postProcess -func 'patchIntegrate(name=inlet,p)'
